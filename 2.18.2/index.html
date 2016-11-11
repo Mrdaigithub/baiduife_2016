@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet">
+    <title>2.18.2</title>
+    <style>
+        ul,li{
+            list-style: none;
+        }
+        #dataList{
+            overflow: hidden;
+        }
+        #dataList li{
+            float: left;
+            background-color: #DD5044;
+            width: 50px;
+            height:0;
+            text-align: center;
+            color: #fff;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="text">
+<div id="btns">
+    <input type="button" value="unshift" class="btn btn-default" id="unshift">
+    <input type="button" value="push" class="btn btn-default" id="push">
+    <input type="button" value="shift" class="btn btn-default" id="shift">
+    <input type="button" value="pop" class="btn btn-default" id="pop">
+    <input type="button" value="sort" class="btn btn-default" id="sort">
+</div>
+<ul id="dataList">
+    <li style="height: 495px;">99</li>
+    <li style="height: 350px;">70</li>
+    <li style="height: 250px;">50</li>
+    <li style="height: 220px;">44</li>
+    <li style="height: 150px;">30</li>
+    <li style="height: 50px;">10</li>
+</ul>
+<script src="index.js"></script>
+</body>
+</html>
