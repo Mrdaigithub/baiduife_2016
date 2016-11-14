@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>2.19.2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main div{
+            padding:8px;
+            border:2px solid #333;
+            float: left;
+            margin: 5px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<main style="overflow:hidden;">
+    <div id="root">Super
+        <div>Cat
+            <div>Apple
+                <div>Pear</div>
+                <div>Pig</div>
+                <div>Cola</div>
+                <div>Soccer</div>
+            </div>
+            <div>Phone</div>
+            <div>Python
+                <div>Book</div>
+                <div>School</div>
+            </div>
+        </div>
+        <div>Note
+            <div>Human
+                <div>Code</div>
+                <div>Operate</div>
+                <div>Man</div>
+            </div>
+            <div>Program
+                <div>Bement
+                    <div>Cat</div>
+                </div>
+                <div>Glass</div>
+            </div>
+        </div>
+        <div>Fish</div>
+    </div>
+</main>
+<br>
+<input type="text" style="margin-bottom:10px;text-indent: 3px;" placeholder="input" id="text">
+<div class="center-block btn-group clearfix">
+    <input type="button" class="btn btn-info" value="Breadth first traversal" id="bft">
+    <input type="button" class="btn btn-danger" value="Depth-first traversal" id="dft">
+    <input type="button" class="btn btn-success" value="Breadth first find" id="bff">
+    <input type="button" class="btn btn-default" value="Depth-first find" id="dff">
+</div>
+<script src="index.js"></script>
+</body>
+</html>
