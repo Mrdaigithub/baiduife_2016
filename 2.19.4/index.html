@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>2.19.3</title>
+    <style>
+        body {
+            font-family: Menlo, Consolas, monospace;
+            color: #444;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .form input{
+            display: inline-block;
+            margin-top:10px;
+        }
+        #root{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #000;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+            text-align: left;
+        }
+        .expand{
+            display: inline-block;
+            text-decoration: none;
+            width: 1em;
+            line-height: 1;
+            border: 1px solid black;
+            text-align: center;
+            margin: 0 6px 0 0;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<form class="text-center">
+    <label for="searchInput">search </label><input type="text" id="searchInput">
+    <button id="searchBtn">searchBtn </button>
+    <br>
+    <label for="addInput">add</label><input type="text" id="addInput">
+    <button id="addBtn">searchBtn</button>
+</form>
+<main style="overflow:hidden;">
+    <ul id="root">
+        <li>
+            <header>
+                <span class="expand">+</span>
+                <span class="title">title</span>
+            </header>
+        </li>
+        <li>
+            <header>
+                <span class="expand">+</span>
+                <span class="title">title</span>
+            </header>
+        </li>
+        <li>
+            <header>
+                <span class="expand">+</span>
+                <span class="title">title</span>
+            </header>
+            <ul>
+                <li>
+                    <header>
+                        <span class="expand">+</span>
+                        <span class="title">title</span>
+                    </header>
+                </li>
+                <li>
+                    <header>
+                        <span class="expand">+</span>
+                        <span class="title">title</span>
+                    </header>
+                    <ul>
+                        <li>
+                            <header>
+                                <span class="expand">+</span>
+                                <span class="title">title</span>
+                            </header>
+                        </li>
+                        <li>
+                            <header>
+                                <span class="expand">+</span>
+                                <span class="title">title</span>
+                            </header>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <header>
+                <span class="expand">+</span>
+                <span class="title">title</span>
+            </header>
+        </li>
+    </ul>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
